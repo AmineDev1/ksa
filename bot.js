@@ -1,3 +1,18 @@
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+
+
+client.on("message",  message => {
+if (message.content == "Ping") {
+message.channel.send('Pong!');
+}
+});
+
+
+client.login("token")```
+
 const adminprefix = "-";
 const devs = ['417377495160193044'];
 client.on('message', message => {
